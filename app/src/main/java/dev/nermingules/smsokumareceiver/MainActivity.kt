@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         var receiver = SmsReceiver()
         registerReceiver(receiver, filter)
 
+
         ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.RECEIVE_SMS,Manifest.permission.READ_SMS),1)
     }
 }
